@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Training outputs and experiment tracking
+outputs/
+checkpoints/
+wandb/
+runs/
+rtc_debug_output/
+
+# Model weights
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Large robotics data and recordings
+data/
+datasets/
+videos/
+*.rrd
+
+# Secrets and local configuration
+.env
+*.token
+credentials.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
