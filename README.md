@@ -21,12 +21,12 @@ Three manipulation tasks were investigated:
 
 The experiments show that compact VLA models can learn useful real-robot behaviors from relatively small task-specific datasets. They also reveal clear limitations in spatial generalization, language grounding, multi-target selection, stage recovery, and contact-rich manipulation.
 
-> **Repository status:** The project page and experiment summary are available. Training, inference, evaluation scripts, videos, datasets, and additional model checkpoints are being organized for release.
+> **Repository status:** The project page, experiment summary, and all three training datasets are available. Training, inference, evaluation scripts, videos, and additional model checkpoints are being organized for release.
 
 ## Highlights
 
 - End-to-end real-robot pipeline using **SO-101**, **LeRobot**, and **SmolVLA**.
-- Leader-follower teleoperation for collecting approximately **400 task demonstrations**.
+- Leader-follower teleoperation for collecting **401 task demonstrations** across three datasets.
 - Two RGB camera views with no wrist camera.
 - Task-specific fine-tuning under limited local GPU resources.
 - Real-robot evaluation with quantitative success rates and staged task analysis.
@@ -52,9 +52,9 @@ The experiments show that compact VLA models can learn useful real-robot behavio
 
 | Task | Language instruction | Episodes | Dataset | Model | Videos |
 |---|---|---:|---|---|---|
-| Pick and place | `pick up the red lego brick into the green box` | 100 | To be released | To be released | To be added |
-| Block stacking | `put the blue block on the red block` | 100 | To be released | To be released | To be added |
-| Wiping | `wipe the coffee stain off the paper with the sponge` | 200 | To be released | [40k-step checkpoint](https://huggingface.co/shuowenLLL/smolvla-wipe-coffee-with-sponge-40k-200) | To be added |
+| Pick and place | `pick up the red lego brick into the green box` | 98 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/redbrick-pick-place_20260602_153911) | To be released | To be added |
+| Block stacking | `put the blue block on the red block` | 102 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/blue-on-red-stack) | To be released | To be added |
+| Wiping | `wipe the coffee stain off the paper with the sponge` | 201 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/wipe-coffee-with-sponge_20260616_164822) | [40k-step checkpoint](https://huggingface.co/shuowenLLL/smolvla-wipe-coffee-with-sponge-40k-200) | To be added |
 
 Datasets and model weights are hosted separately on the Hugging Face Hub rather than committed directly to this Git repository.
 
@@ -148,7 +148,7 @@ interactive-robotics-smolvla/
 - Asynchronous inference configuration and deployment notes.
 - Quantitative evaluation records and failure labels.
 - Forschungspraxis report and presentation.
-- Hugging Face dataset and model links for all three tasks.
+- Additional Hugging Face model links for the pick-and-place and stacking tasks.
 
 ## Related Resources
 
