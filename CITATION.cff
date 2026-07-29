@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata below."
+title: "Interactive Robotics with SmolVLA: Real-time Instruction Following with Vision-Language-Action"
+type: software
+authors:
+  - family-names: Li
+    given-names: Shuowen
+repository-code: "https://github.com/shuowenLLL/interactive-robotics-smolvla"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-07-29
+keywords:
+  - robotics
+  - vision-language-action
+  - SmolVLA
+  - SO-101
+  - imitation learning
+  - LeRobot
