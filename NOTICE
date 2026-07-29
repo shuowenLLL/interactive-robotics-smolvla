@@ -1,0 +1,10 @@
+Interactive Robotics with SmolVLA
+Copyright 2026 Shuowen Li
+
+This project builds on Hugging Face LeRobot and SmolVLA.
+Third-party source files and derived components retain their original copyright
+and license notices.
+
+The Apache License 2.0 in this repository applies to original source code and
+configuration files unless a file states otherwise. Datasets, model weights,
+reports, figures, and videos may be released under separate terms.
