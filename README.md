@@ -169,15 +169,6 @@ interactive-robotics-smolvla/
 └── scripts/       # Data collection, training, inference, and evaluation
 ```
 
-## Planned Releases
-
-- Project teaser and real-robot evaluation videos.
-- Cleaned task-specific training configurations.
-- Real-robot inference scripts for side and upper camera views.
-- Asynchronous inference configuration and deployment notes.
-- Quantitative evaluation records and failure labels.
-- Forschungspraxis report and presentation.
-
 ## Related Resources
 
 - [Hugging Face LeRobot](https://github.com/huggingface/lerobot)
