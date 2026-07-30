@@ -69,7 +69,11 @@ Each demonstration contains synchronized side-view and upper-view RGB observatio
 
 The operator controls the SO-101 follower arm to approach the red brick, grasp it, transport it to the green target box, release it, and return the arm toward its initial configuration.
 
-*Dataset demonstration video will be embedded here.*
+
+
+
+https://github.com/user-attachments/assets/c99151bc-a8dd-4aa8-a44d-fe1a33609180
+
 
 ### Task 2: Block Stacking Demonstration
 
@@ -77,7 +81,11 @@ The operator controls the SO-101 follower arm to approach the red brick, grasp i
 
 The operator guides the arm to locate and grasp the blue block, move it above the red block, and release it to complete the stacking sequence.
 
-*Dataset demonstration video will be embedded here.*
+
+
+https://github.com/user-attachments/assets/d64b16f9-06c2-4976-b90c-07593423dd68
+
+
 
 ### Task 3: Sponge Wiping Demonstration
 
@@ -85,7 +93,11 @@ The operator guides the arm to locate and grasp the blue block, move it above th
 
 The operator guides the arm through a longer tool-use sequence: grasping the sponge, moving it to the stained paper, executing repeated wiping motions, returning the sponge, and moving the arm back toward its final configuration.
 
-*Dataset demonstration video will be embedded here.*
+
+
+https://github.com/user-attachments/assets/8b58875a-b1c0-45b5-93c0-db2f9f7026dd
+
+
 
 ## Data Collection and Fine-tuning Pipeline
 
