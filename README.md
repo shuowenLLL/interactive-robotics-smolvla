@@ -21,7 +21,7 @@ Three manipulation tasks were investigated:
 
 The experiments show that compact VLA models can learn useful real-robot behaviors from relatively small task-specific datasets. They also reveal clear limitations in spatial generalization, language grounding, multi-target selection, stage recovery, and contact-rich manipulation.
 
-> **Repository status:** The project page, experiment summary, all three training datasets, and the corresponding fine-tuned models are available. Training, inference, evaluation scripts, videos, and supporting files are being organized for release.
+> **Repository status:** The project summary, three training datasets, corresponding fine-tuned models, and representative data-collection videos are available. Training, inference, evaluation scripts, real-robot evaluation videos, and supporting files are being organized for release.
 
 ## Highlights
 
@@ -69,11 +69,7 @@ Each demonstration contains synchronized side-view and upper-view RGB observatio
 
 The operator controls the SO-101 follower arm to approach the red brick, grasp it, transport it to the green target box, release it, and return the arm toward its initial configuration.
 
-
-
-
 https://github.com/user-attachments/assets/c99151bc-a8dd-4aa8-a44d-fe1a33609180
-
 
 ### Task 2: Block Stacking Demonstration
 
@@ -81,11 +77,7 @@ https://github.com/user-attachments/assets/c99151bc-a8dd-4aa8-a44d-fe1a33609180
 
 The operator guides the arm to locate and grasp the blue block, move it above the red block, and release it to complete the stacking sequence.
 
-
-
 https://github.com/user-attachments/assets/d64b16f9-06c2-4976-b90c-07593423dd68
-
-
 
 ### Task 3: Sponge Wiping Demonstration
 
@@ -93,11 +85,7 @@ https://github.com/user-attachments/assets/d64b16f9-06c2-4976-b90c-07593423dd68
 
 The operator guides the arm through a longer tool-use sequence: grasping the sponge, moving it to the stained paper, executing repeated wiping motions, returning the sponge, and moving the arm back toward its final configuration.
 
-
-
 https://github.com/user-attachments/assets/8b58875a-b1c0-45b5-93c0-db2f9f7026dd
-
-
 
 ## Data Collection and Fine-tuning Pipeline
 
