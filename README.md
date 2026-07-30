@@ -49,13 +49,43 @@ The experiments show that compact VLA models can learn useful real-robot behavio
 
 ## Tasks and Resources
 
-| Task | Language instruction | Episodes | Dataset | Model | Videos |
+| Task | Language instruction | Episodes | Dataset | Model | Video |
 |---|---|---:|---|---|---|
-| Pick and place | `pick up the red lego brick into the green box` | 98 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/redbrick-pick-place_20260602_153911) | [Fine-tuned SmolVLA](https://huggingface.co/shuowenLLL/smolvla-redbrick-pick-place-v2) | To be added |
-| Block stacking | `put the blue block on the red block` | 102 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/blue-on-red-stack) | [Fine-tuned SmolVLA](https://huggingface.co/shuowenLLL/smolvla-blue-on-red-stack-30k-10) | To be added |
-| Wiping | `wipe the coffee stain off the paper with the sponge` | 201 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/wipe-coffee-with-sponge_20260616_164822) | [40k-step checkpoint](https://huggingface.co/shuowenLLL/smolvla-wipe-coffee-with-sponge-40k-200) | To be added |
+| Pick and place | `pick up the red lego brick into the green box` | 98 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/redbrick-pick-place_20260602_153911) | [Fine-tuned SmolVLA](https://huggingface.co/shuowenLLL/smolvla-redbrick-pick-place-v2) | [Dataset sample](#task-1-pick-and-place-demonstration) |
+| Block stacking | `put the blue block on the red block` | 102 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/blue-on-red-stack) | [Fine-tuned SmolVLA](https://huggingface.co/shuowenLLL/smolvla-blue-on-red-stack-30k-10) | [Dataset sample](#task-2-block-stacking-demonstration) |
+| Wiping | `wipe the coffee stain off the paper with the sponge` | 201 | [Hugging Face Dataset](https://huggingface.co/datasets/shuowenLLL/wipe-coffee-with-sponge_20260616_164822) | [40k-step checkpoint](https://huggingface.co/shuowenLLL/smolvla-wipe-coffee-with-sponge-40k-200) | [Dataset sample](#task-3-sponge-wiping-demonstration) |
 
 Datasets and model weights are hosted separately on the Hugging Face Hub rather than committed directly to this Git repository.
+
+## Dataset Demonstration Samples
+
+The following videos show representative demonstrations used to build the three task-specific LeRobot datasets. They are **data-collection samples recorded through SO-101 leader-follower teleoperation**, not autonomous policy evaluation videos.
+
+Each demonstration contains synchronized side-view and upper-view RGB observations, the 6-dimensional robot state, the 6-dimensional action, and the corresponding language instruction.
+
+### Task 1: Pick-and-Place Demonstration
+
+**Instruction:** `pick up the red lego brick into the green box`
+
+The operator controls the SO-101 follower arm to approach the red brick, grasp it, transport it to the green target box, release it, and return the arm toward its initial configuration.
+
+*Dataset demonstration video will be embedded here.*
+
+### Task 2: Block Stacking Demonstration
+
+**Instruction:** `put the blue block on the red block`
+
+The operator guides the arm to locate and grasp the blue block, move it above the red block, and release it to complete the stacking sequence.
+
+*Dataset demonstration video will be embedded here.*
+
+### Task 3: Sponge Wiping Demonstration
+
+**Instruction:** `wipe the coffee stain off the paper with the sponge`
+
+The operator guides the arm through a longer tool-use sequence: grasping the sponge, moving it to the stained paper, executing repeated wiping motions, returning the sponge, and moving the arm back toward its final configuration.
+
+*Dataset demonstration video will be embedded here.*
 
 ## Data Collection and Fine-tuning Pipeline
 
@@ -141,7 +171,7 @@ interactive-robotics-smolvla/
 
 ## Planned Releases
 
-- Project teaser and task demonstration videos.
+- Project teaser and real-robot evaluation videos.
 - Cleaned task-specific training configurations.
 - Real-robot inference scripts for side and upper camera views.
 - Asynchronous inference configuration and deployment notes.
